@@ -1,8 +1,8 @@
-# bitcore-wallet-client
+# bitcore-wallet-client-snowgem
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-client.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-client)
-[![Build Status](https://img.shields.io/travis/bitpay/bitcore-wallet-client.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-wallet-client)
-[![Coverage Status](https://coveralls.io/repos/bitpay/bitcore-wallet-client/badge.svg)](https://coveralls.io/r/bitpay/bitcore-wallet-client)
+[![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-client-snowgem.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-client-snowgem)
+[![Build Status](https://img.shields.io/travis/bitpay/bitcore-wallet-client-snowgem.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-wallet-client-snowgem)
+[![Coverage Status](https://coveralls.io/repos/bitpay/bitcore-wallet-client-snowgem/badge.svg)](https://coveralls.io/r/bitpay/bitcore-wallet-client-snowgem)
 
 The *official* client library for [bitcore-wallet-service] (https://github.com/pittxid/bitcore-wallet-service).
 
@@ -10,11 +10,11 @@ The *official* client library for [bitcore-wallet-service] (https://github.com/p
 
 This package communicates with BWS [Bitcore wallet service XSG](https://github.com/pittxid/bitcore-wallet-service) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from BWS are checked independently by the peers, thus the importance of using this library when talking to a third party BWS instance.
 
-See [Bitcore-wallet] (https://github.com/bitpay/bitcore-wallet) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client.
+See [Bitcore-wallet] (https://github.com/bitpay/bitcore-wallet) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-snowgem.
 
 ## Get Started
 
-You can start using bitcore-wallet-client with the command below:
+You can start using bitcore-wallet-client-snowgem with the command below:
 
 * via [NPM]: by running `npm install https://github.com/pittxid/bitcore-wallet-service.git`
 from your console.
@@ -28,7 +28,7 @@ Then create two files `irene.js` and `tomas.js` with the content below:
 **irene.js**
 
 ``` javascript
-var Client = require('bitcore-wallet-client');
+var Client = require('bitcore-wallet-client-snowgem');
 
 
 var fs = require('fs');
@@ -54,7 +54,7 @@ client.createWallet("My Wallet", "Irene", 2, 2, {network: 'testnet'}, function(e
 
 ``` javascript
 
-var Client = require('bitcore-wallet-client');
+var Client = require('bitcore-wallet-client-snowgem');
 
 
 var fs = require('fs');
@@ -104,7 +104,7 @@ client.joinWallet(secret, "Tomas", {}, function(err, wallet) {
 });
 ```
 
-Install `bitcore-wallet-client` before start:
+Install `bitcore-wallet-client-snowgem` before start:
 
 ```
 npm install https://github.com/pittxid/bitcore-wallet-service.git
